@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script type="application/javascript" src="js/jquery.min.js"></script>
+		<script type="application/javascript" src="js/bootstrap.min.js"></script>
+		<script type="application/javascript" src="js/Chart.js"></script>
+		<script type="application/javascript" src="js/script.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/blog-backstage.css" />
+		<title>后台管理系统</title>
+	</head>
+	<body>
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">博客后台管理系统</a>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								admin
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dLabel">
+								<li><a>我的收藏</a></li>
+								<li><a>账号中心</a></li>
+							</ul>
+						</li>
+						<li><a><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="list-group margin_t55">
+						<a href="backstage.html" class="list-group-item"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a>
+						<a href="backstage-user.html" class="list-group-item"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a>
+						<a href="backstage-blog.html" class="list-group-item"><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp;博客管理</a>
+						<a href="backstage-search.html" class="list-group-item"><span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;查询</a>
+						<a href="backstage-comment.html" class="list-group-item active"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;评论管理</a>
+						<a href="backstage-category.html" class="list-group-item"><span class="glyphicon glyphicon-th"></span>&nbsp;&nbsp;分类管理</a>
+						<a href="backstage-tag.html" class="list-group-item"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;标签管理</a>
+					</div>
+				</div>
+				<div class="col-md-10">
+					<div class="page-header margin_t55">
+						<h2>评论管理</h2>
+					</div>
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">评论列表</a></li>
+						<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">评论查询</a></li>
+					</ul>
+					<div class="tab-content padding-t15">
+						<div role="tabpanel" class="tab-pane active" id="home">
+							<table class="table padding-t15">
+								<thead>
+									<tr>
+										<th>评论ID</th>
+										<th>博客标题</th>
+										<th>博客分类</th>
+										<th>评论人</th>
+										<th>评论内容</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1023</td>
+										<td>spring中的注解</td>
+										<td>编程语言</td>
+										<td>光头强</td>
+										<td>就知道抄袭！！！！！</td>
+										<td>
+											<a class="btn btn-danger" href="#" role="button">删除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>1023</td>
+										<td>spring中的注解</td>
+										<td>编程语言</td>
+										<td>光头强</td>
+										<td>就知道抄袭！！！！！</td>
+										<td>
+											<a class="btn btn-danger" href="#" role="button">删除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>1023</td>
+										<td>spring中的注解</td>
+										<td>编程语言</td>
+										<td>光头强</td>
+										<td>就知道抄袭！！！！！</td>
+										<td>
+											<a class="btn btn-danger" href="#" role="button">删除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>1023</td>
+										<td>spring中的注解</td>
+										<td>编程语言</td>
+										<td>光头强</td>
+										<td>就知道抄袭！！！！！</td>
+										<td>
+											<a class="btn btn-danger" href="#" role="button">删除</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane" id="profile">
+							<div class="col-md-10">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="请输入评论内容" />
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="form-group">
+									<button type="submit" class="form-control btn btn-default"><span class="glyphicon glyphicon-search"></span> 搜索</button>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">搜索结果</div>
+									<div class="panel-body">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>评论ID</th>
+													<th>博客标题</th>
+													<th>博客分类</th>
+													<th>评论人</th>
+													<th>评论内容</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1023</td>
+													<td>spring中的注解</td>
+													<td>编程语言</td>
+													<td>光头强</td>
+													<td>就知道抄袭！！！！！</td>
+													<td>
+														<a class="btn btn-danger" href="#" role="button">删除</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script type="application/javascript" src="js/jquery.min.js"></script>
+		<script type="application/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<title>博客首页</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					 aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">博客之家</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="springboot">
+						</div>
+						<button type="submit" class="btn btn-default">搜索</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;写博客</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;消息</a></li>
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<span class="glyphicon glyphicon-user"></span>&nbsp;我的
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;我的关注</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-bookmark"></span>&nbsp;我的收藏</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;个人中心</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;账号设置</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#"><span class="glyphicon glyphicon-file"></span>&nbsp;我的博客</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-leaf"></span>&nbsp;管理博客</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;退出</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="list-group font-position-c">
+						<a href="#" class="list-group-item active-sidebar">
+							推荐
+						</a>
+						<a href="#" class="list-group-item">关注</a>
+						<a href="#" class="list-group-item">编程语言</a>
+						<a href="#" class="list-group-item">软件设计</a>
+						<a href="#" class="list-group-item">web前端</a>
+						<a href="#" class="list-group-item">手机开发</a>
+						<a href="#" class="list-group-item">数据库</a>
+						<a href="#" class="list-group-item">操作系统</a>
+						<a href="#" class="list-group-item">大数据/云计算</a>
+						<a href="#" class="list-group-item">计算机基础</a>
+					</div>
+
+					<div class="list-group font-position-c">
+						<a href="#" class="list-group-item active-sideitem">
+							最新博客
+						</a>
+						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item">Morbi leo risus</a>
+						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item">Vestibulum at eros</a>
+					</div>
+
+					<div class="list-group font-position-c">
+						<a href="#" class="list-group-item active-sideitem">
+							博客排行
+						</a>
+						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item">Morbi leo risus</a>
+						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item">Vestibulum at eros</a>
+					</div>
+
+				</div>
+
+				<div class="col-md-10">
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object media-object-img" src="img/regist.jpg" alt="...">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">深入分析Mybatis 使用useGeneratedKeys获取自增主键</h4>
+							摘要 我们经常使用useGenerateKeys来返回自增主键，避免多一次查询。也会经常使用on duplicate key update，来进行insertOrUpdate，来避免先query
+							在insert/update。用起来很爽，但是经常踩坑，还不知为何。本篇就是深入分析获取自增主键的原理。
+						</div>
+						<div class="media-footer">
+							<a>豌豆花下猫&nbsp;&nbsp;</a>发布于<span>2019-09-02</span>
+							<span>阅读数:&nbsp;126</span>
+							<span>评论:&nbsp;5</span>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object media-object-img" src="img/regist.jpg" alt="...">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">深入分析Mybatis 使用useGeneratedKeys获取自增主键</h4>
+							摘要 我们经常使用useGenerateKeys来返回自增主键，避免多一次查询。也会经常使用on duplicate key update，来进行insertOrUpdate，来避免先query
+							在insert/update。用起来很爽，但是经常踩坑，还不知为何。本篇就是深入分析获取自增主键的原理。
+						</div>
+						<div class="media-footer">
+							<a>豌豆花下猫&nbsp;&nbsp;</a>发布于<span>2019-09-02</span>
+							<span>阅读数:&nbsp;126</span>
+							<span>评论:&nbsp;5</span>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object media-object-img" src="img/regist.jpg" alt="...">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">深入分析Mybatis 使用useGeneratedKeys获取自增主键</h4>
+							摘要 我们经常使用useGenerateKeys来返回自增主键，避免多一次查询。也会经常使用on duplicate key update，来进行insertOrUpdate，来避免先query
+							在insert/update。用起来很爽，但是经常踩坑，还不知为何。本篇就是深入分析获取自增主键的原理。
+						</div>
+						<div class="media-footer">
+							<a>豌豆花下猫&nbsp;&nbsp;</a>发布于<span>2019-09-02</span>
+							<span>阅读数:&nbsp;126</span>
+							<span>评论:&nbsp;5</span>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object media-object-img" src="img/regist.jpg" alt="...">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">深入分析Mybatis 使用useGeneratedKeys获取自增主键</h4>
+							摘要 我们经常使用useGenerateKeys来返回自增主键，避免多一次查询。也会经常使用on duplicate key update，来进行insertOrUpdate，来避免先query
+							在insert/update。用起来很爽，但是经常踩坑，还不知为何。本篇就是深入分析获取自增主键的原理。
+						</div>
+						<div class="media-footer">
+							<a>豌豆花下猫&nbsp;&nbsp;</a>发布于<span>2019-09-02</span>
+							<span>阅读数:&nbsp;126</span>
+							<span>评论:&nbsp;5</span>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object media-object-img" src="img/regist.jpg" alt="...">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">深入分析Mybatis 使用useGeneratedKeys获取自增主键</h4>
+							摘要 我们经常使用useGenerateKeys来返回自增主键，避免多一次查询。也会经常使用on duplicate key update，来进行insertOrUpdate，来避免先query
+							在insert/update。用起来很爽，但是经常踩坑，还不知为何。本篇就是深入分析获取自增主键的原理。
+						</div>
+						<div class="media-footer">
+							<a>豌豆花下猫&nbsp;&nbsp;</a>发布于<span>2019-09-02</span>
+							<span>阅读数:&nbsp;126</span>
+							<span>评论:&nbsp;5</span>
+						</div>
+					</div>
+
+					<nav aria-label="...">
+						<ul class="pagination">
+							<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+							<li class="active"><a href="#">1 <span class="sr-only"></span></a></li>
+							<li><a href="#">2 <span class="sr-only"></span></a></li>
+							<li><a href="#">3 <span class="sr-only"></span></a></li>
+							<li><a href="#">5 <span class="sr-only"></span></a></li>
+							<li><a href="#">6 <span class="sr-only"></span></a></li>
+							<li><a href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
+						</ul>
+					</nav>
+
+				</div>
+
+				<!-- <div class="col-md-2"></div> -->
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<h3>footer</h3>
+				</div>
+			</div>
+			
+		</div>
+
+	</body>
+</html>

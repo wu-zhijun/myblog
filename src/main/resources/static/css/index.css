@@ -1,0 +1,64 @@
+.font-position-c{
+	text-align: center;
+}
+
+/* 侧边导航栏 */
+.list-group-item.active-sidebar, .list-group-item.active-sidebar:focus, .list-group-item.active-sidebar:hover{
+	z-index: 2;
+	color: #fff;
+	background-color: #ce4417;
+	border-color: #ce4417;
+}
+
+
+/* 侧边栏 */
+.list-group-item.active-sideitem, .list-group-item.active-sideitem:focus, .list-group-item.active-sideitem:hover{
+	z-index: 2;
+	color: #fff;
+	background-color: #ce9a17;
+	border-color: #ce9a17;
+}
+
+/* 博客内容列表 */
+.media-object-img {
+    height: 64px;
+    width: 64px;
+    border-radius: 5px;
+	vertical-align: middle
+}
+
+h4.media-heading{
+	cursor: pointer;
+	color: #01AAED;
+}
+
+h4.media-heading:hover{
+	cursor: pointer;
+	color: brown;
+}
+
+.media-footer{
+	padding: 5px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 15px;
+}
+
+.media-footer span {
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.media-footer span:hover{
+	cursor: pointer;
+	color: brown
+}
+
+.media-footer a{
+	cursor: pointer;
+}
+
+.media-footer a:hover{
+	cursor: pointer;
+	color: brown;
+}
+
